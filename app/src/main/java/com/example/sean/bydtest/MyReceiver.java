@@ -15,6 +15,7 @@ public class MyReceiver extends BroadcastReceiver {
         //throw new UnsupportedOperationException("Not yet implemented");
         String name = intent.getStringExtra("appName");
         Log.d("接收到广播的全称：", intent.getAction());
+        Log.d("修改", intent.getAction());
         PackageManager packageManager = context.getPackageManager();
         Intent startIntent = new Intent();
         startIntent = packageManager.getLaunchIntentForPackage("com.example.sean.bydtest");
